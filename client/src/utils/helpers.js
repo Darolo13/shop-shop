@@ -1,8 +1,8 @@
 export function pluralize(name, count) {
   if (count === 1) {
-    return name
+    return name;
   }
-  return name + 's'
+  return name + 's';
 }
 
 export function idbPromise(storeName, method, object) {
@@ -25,7 +25,7 @@ export function idbPromise(storeName, method, object) {
 
     // handle any errors with connecting
     request.onerror = function (e) {
-      console.log('There was an error');
+      console.log('There was an error', e);
     };
 
     // on database open success
@@ -66,6 +66,5 @@ export function idbPromise(storeName, method, object) {
         db.close();
       };
     };
-
   });
 }
