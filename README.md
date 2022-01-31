@@ -1,1 +1,1 @@
-# *_shop-shop_*
+# _shop-shop_
